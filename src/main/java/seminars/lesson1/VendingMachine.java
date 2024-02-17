@@ -4,7 +4,7 @@ public interface VendingMachine {
 
     void addProductList(Product product);
 
-    Product getProductByName(String name);
+    Product getProduct(String name);
 
-    Product getProductByCost(double cost);
+    Product getProduct(double cost);
 }

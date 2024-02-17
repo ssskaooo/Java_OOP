@@ -14,7 +14,7 @@ public class BottleOfWatterVendingMachine implements VendingMachine{
     }
 
     @Override
-    public Product getProductByName(String name) {
+    public Product getProduct(String name) {
         for (Product product : productList) {
             if(product.getName().equals(name)){
                 return product;
@@ -24,7 +24,7 @@ public class BottleOfWatterVendingMachine implements VendingMachine{
     }
 
     @Override
-    public Product getProductByCost(double cost) {
+    public Product getProduct(double cost) {
         for (Product product : productList) {
             if(product.getCost() == cost){
                 return product;
@@ -32,4 +32,5 @@ public class BottleOfWatterVendingMachine implements VendingMachine{
         }
         return null;
     }
+
 }

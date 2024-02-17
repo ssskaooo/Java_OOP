@@ -13,11 +13,14 @@ public class Main {
 
         printProductByName(machine, "Лимонад");
 
+//        HotDrink hd = new HotDrink();
+
+
 
     }
 
     public static void printProductByName(VendingMachine vendingMachine, String name){
-        System.out.println(vendingMachine.getProductByName(name));
+        System.out.println(vendingMachine.getProduct(name));
     }
 
 
