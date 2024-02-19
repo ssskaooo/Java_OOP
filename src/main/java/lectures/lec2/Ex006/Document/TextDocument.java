@@ -1,4 +1,4 @@
-package Lesson_08.Ex006.Document;
+package lectures.lec2.Ex006.Document;
 
 public class TextDocument {
 
@@ -23,12 +23,12 @@ public class TextDocument {
         }
     }
 
-    // public void addAllText(String ... data){
-    //     for (String line : data) {
-    //         sb.append(line);
-    //         //addAllText(line);
-    //     }
-    // }
+     public void addAllText(String ... data){
+         for (String line : data) {
+             sb.append(line);
+             //addAllText(line);
+         }
+     }
     
     public String getData(){
         return sb.toString();
