@@ -7,14 +7,14 @@ public class Market implements MarketBehaviour,QueueBehaviour{
     private List<Actor> actorList = new ArrayList<>();
     @Override
     public void acceptToMarket(Actor actor) {
-        System.out.println(actor.getName() + " Зашел в магазин");
+        System.out.println(actor.getName() + " Зашел(шла) в магазин");
         takeInQueue(actor);
     }
 
     @Override
     public void releaseFromMarket(List<Actor> actors) {
         for (Actor actor : actors){
-            System.out.println(actor.getName() + " Вышел из магазина");
+            System.out.println(actor.getName() + " Вышел(шла) из магазина");
             actorList.remove(actor);
         }
     }
@@ -28,7 +28,7 @@ public class Market implements MarketBehaviour,QueueBehaviour{
 
     @Override
     public void takeInQueue(Actor actor) {
-        System.out.println(actor.getName() + " Встал в очередь");
+        System.out.println(actor.getName() + " Встал(а) в очередь");
         actorList.add(actor);
     }
 
@@ -37,7 +37,7 @@ public class Market implements MarketBehaviour,QueueBehaviour{
         for (Actor actor : actorList){
             if(!actor.isMakeOrder()){
                 actor.setMakeOrder(true);
-                System.out.println(actor.getName() + " Сделал заказ");
+                System.out.println(actor.getName() + " Сделал(а) заказ");
             }
         }
     }
@@ -47,7 +47,7 @@ public class Market implements MarketBehaviour,QueueBehaviour{
         for (Actor actor : actorList){
             if(actor.isMakeOrder()){
                 actor.setTakeOrder(true);
-                System.out.println(actor.getName() + " Получил заказ");
+                System.out.println(actor.getName() + " Получил(а) заказ");
             }
         }
     }
@@ -58,7 +58,7 @@ public class Market implements MarketBehaviour,QueueBehaviour{
         for (Actor actor : actorList){
             if(actor.isTakeOrder()){
                 releasedActors.add(actor);
-                System.out.println(actor.getName() + " Вышел из очереди");
+                System.out.println(actor.getName() + " Вышел(ла) из очереди");
             }
         }
         releaseFromMarket(releasedActors);
