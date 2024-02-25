@@ -1,14 +1,14 @@
-package homework.hw2;
+package seminars.lesson2;
 
 public abstract class Actor implements ActorBehaviour{
 
     protected String name;
-    protected boolean isTakeOrder;
     protected boolean isMakeOrder;
+    protected boolean isTakeOrder;
+
+    public abstract String getName();
 
     public Actor(String name) {
         this.name = name;
     }
-
-    public abstract String getName();
 }
