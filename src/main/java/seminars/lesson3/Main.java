@@ -1,5 +1,8 @@
 package seminars.lesson3;
 
+import seminars.lesson4.StudentView;
+import seminars.lesson4.UserView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +15,6 @@ public class Main {
         Student student3 = new Student(2, "Egor","Egor2","Egor3" );
         Student student4 = new Student(1, "Andry","Andry2","Andry3" );
 
-
-
         List<Student> studentList = new ArrayList<>();
         StudentGroup studentGroup = new StudentGroup(studentList);
 
@@ -24,16 +25,7 @@ public class Main {
 
 
         StudentGroupService service = new StudentGroupService(studentGroup);
-        for (Student student : studentGroup.studentList) {
-            System.out.println(student.toString());
-        }
-        System.out.println();
-        for (Student student : service.getSortedStudentGroup()) {
-            System.out.println(student.toString());
-        }
-        System.out.println();
-        for (Student student : service.getSortedStudentGroupByFIO()) {
-            System.out.println(student.toString());
-        }
+        UserView<Student> view = new StudentView();
+        view.sendOnConsole(service.getSortedStudentGroupByFIO());
     }
 }
