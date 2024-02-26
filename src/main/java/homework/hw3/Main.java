@@ -1,4 +1,4 @@
-package homework.HW3;
+package homework.hw3;
 
 import java.util.ArrayList;
 import java.util.List;

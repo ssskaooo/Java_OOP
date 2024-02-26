@@ -1,4 +1,4 @@
-package homework.HW3;
+package homework.hw3;
 
 public class StreamComparator {
     public int compare(Stream stream1, Stream stream2) {
