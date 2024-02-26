@@ -7,10 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student(1, "Max","Max2","Max3" );
-        Student student2 = new Student(2, "Viktor","Viktor2","Viktor3" );
-        Student student3 = new Student(3, "Egor","Egor2","Egor3" );
-        Student student4 = new Student(4, "Andry","Andry2","Andry3" );
+        Student student1 = new Student(4, "Max","Max2","Max3" );
+        Student student2 = new Student(3, "Viktor","Viktor2","Viktor3" );
+        Student student3 = new Student(2, "Egor","Egor2","Egor3" );
+        Student student4 = new Student(1, "Andry","Andry2","Andry3" );
 
 
 
@@ -23,8 +23,17 @@ public class Main {
         studentGroup.addStudent(student4);
 
 
-        for (Student student : studentGroup) {
-            System.out.println(student);
+        StudentGroupService service = new StudentGroupService(studentGroup);
+        for (Student student : studentGroup.studentList) {
+            System.out.println(student.toString());
+        }
+        System.out.println();
+        for (Student student : service.getSortedStudentGroup()) {
+            System.out.println(student.toString());
+        }
+        System.out.println();
+        for (Student student : service.getSortedStudentGroupByFIO()) {
+            System.out.println(student.toString());
         }
     }
 }

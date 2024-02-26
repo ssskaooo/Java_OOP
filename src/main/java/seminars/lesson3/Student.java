@@ -1,6 +1,6 @@
 package seminars.lesson3;
 
-public class Student {
+public class Student implements Comparable<Student>{
 
     public Integer studentId;
     public String firstName;
@@ -22,5 +22,17 @@ public class Student {
                 ", secondName='" + secondName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+//        if(studentId > o.studentId){
+//            return 1;
+//        }
+//        if(studentId < o.studentId){
+//            return -1;
+//        }
+//        return 0;
+        return studentId.compareTo(o.studentId);
     }
 }
