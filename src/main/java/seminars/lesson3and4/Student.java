@@ -1,6 +1,4 @@
-package seminars.lesson3;
-
-import seminars.lesson4.User;
+package seminars.lesson3and4;
 
 public class Student extends User implements Comparable<Student>{
 

@@ -1,4 +1,4 @@
-package seminars.lesson4;
+package seminars.lesson3and4;
 
 public class User {
 

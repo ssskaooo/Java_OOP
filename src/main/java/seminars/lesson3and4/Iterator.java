@@ -1,4 +1,4 @@
-package seminars.lesson3;
+package seminars.lesson3and4;
 
 public interface Iterator<S> {
 

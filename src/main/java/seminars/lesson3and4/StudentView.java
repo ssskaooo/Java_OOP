@@ -1,6 +1,4 @@
-package seminars.lesson4;
-
-import seminars.lesson3.Student;
+package seminars.lesson3and4;
 
 import java.util.List;
 

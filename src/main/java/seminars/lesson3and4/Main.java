@@ -1,7 +1,4 @@
-package seminars.lesson3;
-
-import seminars.lesson4.StudentView;
-import seminars.lesson4.UserView;
+package seminars.lesson3and4;
 
 import java.util.ArrayList;
 import java.util.List;
