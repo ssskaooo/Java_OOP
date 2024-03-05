@@ -1,6 +1,6 @@
-package seminars.sem5;
+package seminars.lesson5;
 
-import seminars.sem5.controller.Controller;
+import seminars.lesson5.controller.Controller;
 
 public class Main {
 

@@ -1,6 +1,6 @@
-package seminars.sem5.view;
+package seminars.lesson5.view;
 
-import seminars.sem5.model.User;
+import seminars.lesson5.model.User;
 
 import java.util.List;
 

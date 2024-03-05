@@ -1,8 +1,8 @@
-package seminars.sem5.controller;
+package seminars.lesson5.controller;
 
-import seminars.sem5.model.TypeUser;
-import seminars.sem5.service.DateService;
-import seminars.sem5.view.StudentView;
+import seminars.lesson5.model.TypeUser;
+import seminars.lesson5.service.DateService;
+import seminars.lesson5.view.StudentView;
 
 public class Controller {
 

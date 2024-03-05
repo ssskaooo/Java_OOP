@@ -1,4 +1,4 @@
-package seminars.sem5.model;
+package seminars.lesson5.model;
 
 public class Student extends User{
 

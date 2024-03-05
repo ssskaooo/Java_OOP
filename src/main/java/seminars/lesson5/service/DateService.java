@@ -1,9 +1,9 @@
-package seminars.sem5.service;
+package seminars.lesson5.service;
 
-import seminars.sem5.model.Student;
-import seminars.sem5.model.Teacher;
-import seminars.sem5.model.TypeUser;
-import seminars.sem5.model.User;
+import seminars.lesson5.model.Student;
+import seminars.lesson5.model.Teacher;
+import seminars.lesson5.model.TypeUser;
+import seminars.lesson5.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
